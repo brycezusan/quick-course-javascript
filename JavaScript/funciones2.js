@@ -8,6 +8,7 @@ console.log(listaCompleta)
 
 // Promesas
 // terminación o fracaso de una operación asyncrona
+// Async  - await 
 
 Promise.resolve(10)
   .then(val => console.log(val))

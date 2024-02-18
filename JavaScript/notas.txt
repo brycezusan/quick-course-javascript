@@ -1,0 +1,17 @@
+Array.from()-> Crea un nuevo arreglo 
+join()->permite concatenar los elemtos de un arreglo
+const elements = ['Fire', 'Air', 'Water'];
+console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+console.log(elements.join(''));
+// Expected output: "FireAirWater"
+console.log(elements.join('-'));
+// Expected output: "Fire-Air-Water"
+
+splice()-> eliminar una elemento del arreglo
+splice(indice del elemento , cantidad de elementos a partir del indice)
+
+funciones que se llaman a si mismas se conoce como recursividad
+
+LocalStorage ->Persistencia de Datos
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      body {
+        background-color: aliceblue;
+        font-size: 1.25rem;
+      }
+      .titulo {
+        margin-top: 5rem;
+        background-color: white;
+        padding: 3rem;
+        text-align: center;
+        width: 500px;
+        margin-inline: auto;
+        color: gray;
+        border-radius: 2.5rem;
+        box-shadow: -14px -12px 61px 0px rgba(133, 90, 121, 0.69);
+        -webkit-box-shadow: -14px -12px 61px 0px rgba(133, 90, 121, 0.69);
+        -moz-box-shadow: -14px -12px 61px 0px rgba(133, 90, 121, 0.69);
+      }
+      p {
+        font-weight: bold;
+      }
+
+      .subtitulo {
+        text-align: center;
+        color: red;
+        font-weight: 900;
+      }
+
+      .campo {
+        max-width: 16rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .input {
+        padding: 8px;
+      }
+      .btn {
+        padding: 10px 40px;
+        border: none;
+        background-color: blue;
+        margin-top: 1rem;
+        border-radius: 16px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .todo-list{
+        background-color: white;
+        width: calc(100% - 15%);
+        margin-inline: auto;
+        padding: 2rem;
+        margin-top: 2rem;
+      }
+
+      .contenido{
+        display: flex;
+        gap: 2rem;
+      }
+      #formulario{
+        background-color: blue;
+        padding: 1rem;
+        color: white;
+      }
+      .campo{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .campo #texto{
+        padding: 10px;
+      }
+      
+      input[type='submit']{
+        padding: 10px 30px;
+        margin-top: 1rem;
+        background-color: yellow;
+        color: blue;
+        font-weight: 900;
+        border: none;
+        text-transform: uppercase;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div class="titulo">
+      <h1 id="titulo">Curso de JavaScript | ES9</h1>
+      <p id="parrafo">Introducción y repaso para JavaScript</p>
+    </div>
+
+    <section class="todo-list">
+      <h2 class="subtitulo">Todo List</h2>
+      <div class="contenido">
+        <form id="formulario">
+          <div class="campo">
+            <label for="work">Ingrese la tarea</label>
+            <input id="texto" type="text" placeholder="comer , dormir , etc..." id="work">
+          </div>
+          <input id="enviar" type="submit" value="enviar">
+        </form>
+        <ul id="tareas">
+  
+        </ul>
+      </div>
+    </section>
+
+   
+
+    <script src="dom.js" defer></script>
+  </body>
+</html>
